@@ -1,61 +1,189 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Shadow Websites</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shadow Websites</title>
+
 <link rel="icon" type="image/png" href="favicon.png">
-  <meta charset="UTF-8">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: auto;
-      padding: 20px;
-      background: #f5f5f5;
-    }
 
-    .box {
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
 
-    h1 {
-      color: #333;
-    }
+body{
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    color:white;
+}
 
-    a.button {
-      display: inline-block;
-      background: #007bff;
-      color: white;
-      text-decoration: none;
-      padding: 12px 20px;
-      border-radius: 5px;
-      margin-top: 20px;
-    }
+header{
+    padding:100px 20px;
+    text-align:center;
+}
 
-    a.button:hover {
-      background: #0056b3;
-    }
-  </style>
+.logo{
+    width:120px;
+    border-radius:50%;
+    margin-bottom:20px;
+}
+
+h1{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+header p{
+    font-size:20px;
+    opacity:0.9;
+    margin-bottom:35px;
+}
+
+.btn{
+    display:inline-block;
+    background:white;
+    color:#667eea;
+    padding:15px 35px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+section{
+    max-width:1200px;
+    margin:auto;
+    padding:80px 20px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:40px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    color:#333;
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+}
+
+.card h3{
+    margin-bottom:15px;
+    font-size:28px;
+}
+
+.price{
+    font-size:40px;
+    color:#667eea;
+    margin-bottom:20px;
+}
+
+.card ul{
+    list-style:none;
+    margin-bottom:30px;
+}
+
+.card ul li{
+    margin:10px 0;
+}
+
+.card a{
+    background:#667eea;
+    color:white;
+    text-decoration:none;
+    padding:12px 30px;
+    border-radius:10px;
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    opacity:0.8;
+}
+</style>
 </head>
 <body>
-  <div class="box">
-    <h1>Need a Website?</h1>
-    <p>
-      Tell me about your project and I'll build the website you want.
-    </p>
 
-    <h3>What I can build:</h3>
-    <ul>
-      <li>Business websites</li>
-      <li>E-commerce stores</li>
-      <li>Portfolios</li>
-      <li>Blogs</li>
-      <li>Landing pages</li>
-    </ul>
+<header>
 
-    <a class="button" href="order.html">Order a Website</a>
-  </div>
+    <img src="favicon.png" class="logo">
+
+    <h1>Shadow Websites</h1>
+
+    <p>Professional websites for businesses, creators and brands.</p>
+
+    <a href="order.html" class="btn">🚀 Order Your Website</a>
+
+</header>
+
+<section>
+
+    <h2 class="section-title">Our Packages</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Starter</h3>
+            <div class="price">$49</div>
+
+            <ul>
+                <li>1 Page Website</li>
+                <li>Mobile Friendly</li>
+                <li>Fast Delivery</li>
+            </ul>
+
+            <a href="order.html">Choose Plan</a>
+        </div>
+
+        <div class="card">
+            <h3>Business</h3>
+            <div class="price">$99</div>
+
+            <ul>
+                <li>5 Pages</li>
+                <li>Modern Design</li>
+                <li>Contact Form</li>
+            </ul>
+
+            <a href="order.html">Choose Plan</a>
+        </div>
+
+        <div class="card">
+            <h3>Premium</h3>
+            <div class="price">$199</div>
+
+            <ul>
+                <li>Custom Design</li>
+                <li>Unlimited Pages</li>
+                <li>Priority Support</li>
+            </ul>
+
+            <a href="order.html">Choose Plan</a>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Shadow Websites • Design • Develop • Deliver
+</footer>
+
 </body>
 </html>
