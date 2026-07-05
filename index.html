@@ -38,6 +38,9 @@ nav{
     width:45px;
     border-radius:50%;
 }
+html{
+    scroll-behavior:smooth;
+}
 *{
     margin:0;
     padding:0;
@@ -66,6 +69,18 @@ header{
     width:120px;
     border-radius:50%;
     margin-bottom:20px;
+    animation:float 3s ease-in-out infinite;
+}
+@keyframes float{
+    0%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-15px);
+    }
+    100%{
+        transform:translateY(0);
+    }
 }
 
 h1{
@@ -87,13 +102,14 @@ header p{
     border-radius:50px;
     text-decoration:none;
     font-weight:bold;
-    transition:0.3s;
+    transition:0.4s;
+    box-shadow:0 0 20px rgba(255,255,255,0.5);
 }
 
 .btn:hover{
-    transform:translateY(-3px);
+    transform:translateY(-5px) scale(1.05);
+    box-shadow:0 0 35px rgba(255,255,255,0.9);
 }
-
 section{
     max-width:1200px;
     margin:auto;
@@ -187,7 +203,52 @@ footer{
     <a href="order.html" class="btn">Order Your Website</a>
 
 </header>
+<section>
 
+<div class="cards">
+
+<div class="card">
+<h2>50+</h2>
+<p>Websites Created</p>
+</div>
+
+<div class="card">
+<h2>100%</h2>
+<p>Happy Clients</p>
+</div>
+
+<div class="card">
+<h2>24/7</h2>
+<p>Support</p>
+</div>
+
+</div>
+
+</section>
+<section>
+
+<h2 class="section-title">Why Choose Shadow Websites?</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>⚡ Fast Delivery</h3>
+<p>Receive your website quickly.</p>
+</div>
+
+<div class="card">
+<h3>Mobile Friendly</h3>
+<p>Works on phones and computers.</p>
+</div>
+
+<div class="card">
+<h3>Modern Design</h3>
+<p>Beautiful professional websites.</p>
+</div>
+
+</div>
+
+</section>
 <section id="packages">
 
     <h2 class="section-title">Our Packages</h2>
@@ -236,7 +297,15 @@ footer{
     </div>
 
 </section>
+<section id="contact">
 
+<h2 class="section-title">Contact Us</h2>
+
+<p style="text-align:center;font-size:25px;">
+📧 yoyoblue30@gmail.com
+</p>
+
+</section>
 <footer id="contact">
     © 2026 Shadow Websites • Design • Develop • Deliver
 </footer>
