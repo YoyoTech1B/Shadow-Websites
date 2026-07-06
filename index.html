@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<header class="hero-box">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shadow Websites</title>
@@ -20,6 +20,8 @@ nav{
     background:rgba(255,255,255,0.1);
     backdrop-filter:blur(10px);
     z-index:1000;
+    border-bottom:1px solid rgba(255,255,255,0.2);
+box-shadow:0 5px 20px rgba(0,0,0,0.15);
 }
 
 .nav-links a{
@@ -65,6 +67,16 @@ header{
     text-align:center;
 }
 
+.hero-box{
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,0.2);
+    border-radius:35px;
+    max-width:900px;
+    margin:auto;
+    box-shadow:0 20px 50px rgba(0,0,0,0.25);
+}
 .logo{
     width:120px;
     border-radius:50%;
@@ -84,10 +96,10 @@ header{
 }
 
 h1{
-    font-size:55px;
+    font-size:60px;
     margin-bottom:15px;
+    text-shadow:0 0 30px rgba(255,255,255,0.6);
 }
-
 header p{
     font-size:20px;
     opacity:0.9;
@@ -168,11 +180,17 @@ section{
 }
 
 .card a{
-    background:#667eea;
-    color:white;
+    background:white;
+    color:#667eea;
     text-decoration:none;
-    padding:12px 30px;
-    border-radius:10px;
+    padding:14px 30px;
+    border-radius:30px;
+    font-weight:bold;
+    transition:0.3s;
+}
+.card a:hover{
+    transform:scale(1.08);
+    box-shadow:0 0 25px rgba(255,255,255,0.7);
 }
 
 footer{
@@ -190,6 +208,19 @@ footer{
         opacity:1;
         transform:translateY(0);
     }
+}
+.stars{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    pointer-events:none;
+    background-image:
+        radial-gradient(white 1px, transparent 1px),
+        radial-gradient(white 1px, transparent 1px);
+    background-size:80px 80px;
+    opacity:0.15;
 }
 </style>
 </head>
@@ -321,6 +352,6 @@ footer{
 <footer id="contact">
     © 2026 Shadow Websites • Design • Develop • Deliver
 </footer>
-
+<div class="stars"></div>
 </body>
 </html>
